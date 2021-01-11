@@ -16,8 +16,6 @@ app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-var distDir = __dirname + "/dist/";
-app.use('/', express.static(distDir));
 // app.use('/api', [phonesRoute, authRoute]);
 
 module.exports = app;
