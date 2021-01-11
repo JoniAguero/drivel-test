@@ -20,11 +20,4 @@ var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
 // app.use('/api', [phonesRoute, authRoute]);
 
-app.use('/api', (req, res) => {
-  res.send(`
-  <div style="width: 100%; text-align: center">
-    <h1 style >Hello :) , to make sure you use the API, use /api/phones </h1>
-  </div>`);
-});
-
 module.exports = app;
