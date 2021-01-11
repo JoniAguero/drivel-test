@@ -16,10 +16,11 @@ app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 // app.use('/api', [phonesRoute, authRoute]);
 
-app.use('/', (req, res) => {
+app.use('/api', (req, res) => {
   res.send(`
   <div style="width: 100%; text-align: center">
     <h1 style >Hello :) , to make sure you use the API, use /api/phones </h1>
