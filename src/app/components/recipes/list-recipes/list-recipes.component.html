@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-4 mt-5" *ngFor="let recipe of recipes">
+    <div class="card" >
+      <img class="card-img-top" src={{recipe.thumbnail}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{recipe.title}}</h5>
+        <p class="card-text">{{recipe.ingredients}}</p>
+        <div class="d-flex flex-row justify-content-between">
+          <a target="_blank" href={{recipe.href}} class="btn btn-primary">Go Recipe</a>
+          <button (click)="addToFavorite(recipe)" class="btn btn-link"><i class="bi bi-heart"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
