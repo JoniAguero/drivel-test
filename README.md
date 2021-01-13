@@ -1,7 +1,7 @@
 # Drivel CODE TEST :rocket:
 
-Drivel Test it's a small project that has been built with the MEAN Stack.
-API built with Node JS, express and mongoose. Mongo is used as a database, and a cluster has been created in [Mongo Atlas](https://www.mongodb.com/cloud/atlas).  
+Drivel Test it's a small project that has been built with the MEAN Stack.   
+From the server a third-party [API](http://www.recipepuppy.com/about/api/) is consumed. Mongo is used as a database, and a cluster has been created in [Mongo Atlas](https://www.mongodb.com/cloud/atlas).  
 
 Hosted: [Heroku](https://www.heroku.com/what)   
 API Preview: [API hosted by Heroku](https://salty-dawn-54483.herokuapp.com/)
