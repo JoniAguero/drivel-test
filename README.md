@@ -4,7 +4,7 @@ Drivel Test it's a small project that has been built with the MEAN Stack.
 API built with Node JS, express and mongoose. Mongo is used as a database, and a cluster has been created in [Mongo Atlas](https://www.mongodb.com/cloud/atlas).  
 
 Hosted: [Heroku](https://www.heroku.com/what)   
-API Preview: [API hosted by Heroku](https://salty-dawn-54483.herokuapp.com/login/)
+API Preview: [API hosted by Heroku](https://salty-dawn-54483.herokuapp.com/)
 ## Installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install the app.
