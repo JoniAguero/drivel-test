@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
@@ -10,7 +10,8 @@ import { RouterModule } from '@angular/router';
         ReactiveFormsModule,
         CommonModule,
         NgbModule,
-        RouterModule
+        RouterModule,
+        FormsModule
     ],
     declarations: [
         HeaderComponent

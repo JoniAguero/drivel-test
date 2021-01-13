@@ -78,9 +78,11 @@ const GetRecipesApi = async (req, res) => {
 const GetRecipesFav = async (req, res) => {
   const uid = req.uid;
   const role = req.header("x-role")
+  const search = req.query.search;
   try {
     if(role === '"admin"') {
-      Recipe.find({}, (err, recipes) => {
+      const query = search ? { ingredients: { $regex: search, $options: "i" }} : null;
+      Recipe.find(query, (err, recipes) => {
         if (err) return res.status(400).send(err)
         res.status(200).send({
           ok: true,

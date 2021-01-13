@@ -8,6 +8,11 @@
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/favorites']" routerLinkActive="active">Favorites</a>
       </li>
+      <div class="d-flex" *ngIf="currentUser.role == 'admin'">
+        <input [(ngModel)]="searchInput" #ctrl="ngModel" required class="form-control ml-5" placeholder="Search by ingredients" aria-label="Search">
+        <button (click)="filterByIngredients()" class="btn btn-outline-light ml-1" type="submit">Search</button>
+        <button (click)="authenticationService.logout()" class="btn btn-primary ml-1" type="submit">Logout</button>
+      </div>
     </ul>
   </div>
 </nav>
